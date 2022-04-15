@@ -14,3 +14,11 @@ body {
 .margin-tax {
   margin-left: 80px;
 }
+
+.padding-80 {
+  padding-left:80px;
+}
+
+.bg {
+  background-color: rgb(14,14,14);
+}

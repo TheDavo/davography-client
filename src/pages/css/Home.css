@@ -9,3 +9,18 @@
 .column-right{
   flex: 50%;
 }
+
+img {
+  width: 100%;
+}
+
+h1, p {
+  color: white;
+}
+
+
+@media (max-width: 800px) {
+  .container{
+    flex-direction: column;
+  }
+}
