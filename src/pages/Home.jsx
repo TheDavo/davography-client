@@ -7,7 +7,7 @@ import porsche_canaan from './img/porsche_canaan.jpg'
 
 function Home() {
   return (
-    <div className="bg">
+    <div className="gallery-list bg">
       <div className="container">
         <div className="column-left">
           <img src={infiniti} alt="Autocross car" />

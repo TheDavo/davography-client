@@ -5,13 +5,13 @@ export default function SportDefinition(props) {
   const {category, link, pronunciation, definition} = props;
   
   return (
-    <>
+    <div className="sport-definition">
       <div className="heading-container">
         <h1 className="category">{category}</h1>
-        <Link to={link}>Go to Gallery</Link>
+        <Link to={link} className="gallery-link">Go to Gallery</Link>
       </div>
       <p>{pronunciation}</p>
       <p>{definition}</p>
-    </>
+    </div>
   );
 }

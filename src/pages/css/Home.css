@@ -1,6 +1,7 @@
 .container {
   display: flex;
   flex-direction: row;
+  margin: 0;
 }
 
 .column-left{
@@ -18,9 +19,39 @@ h1, p {
   color: white;
 }
 
+.gallery-list .container:nth-child(even) {
+  flex-direction: row-reverse;
+}
 
-@media (max-width: 800px) {
+/* .bg .container:nth-child(even) .column-right div.sport-definition{
+  padding: 80px;
+} */
+
+.column-right div.sport-definition{
+  padding: 100px;
+}
+
+
+@media (max-width: 1300px) {
   .container{
     flex-direction: column;
+  }
+
+  .heading-container {
+    flex-direction: column;
+  }
+
+  .gallery-list div.container:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .heading-container {
+    font-size: 2rem;
+  }
+  .gallery-link {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 1rem;
   }
 }

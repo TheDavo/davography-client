@@ -4,8 +4,46 @@
   align-items: center;
   padding-right: 30px;
   padding-left: 10px;
+  font-size: 3rem;
 }
 
 p {
   padding: 0 10px;
+  font-size: 1.5rem;
+}
+
+.gallery-link {
+  background-color: #ffb145;
+  border-radius: 15px;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 2rem;
+  transition: 200ms;
+}
+
+.gallery-link:hover{
+  background-color: white;
+  color: black;
+  transition: 200ms;
+}
+
+@media (max-width: 1300px) {
+
+
+  .heading-container {
+    flex-direction: column;
+  }
+
+
+  .heading-container {
+    font-size: 2rem;
+  }
+
+  .gallery-link {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
 }
