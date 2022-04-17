@@ -10,6 +10,7 @@ function Home() {
     <>
       <section className="hero">
         <div className="hero-info">
+          <h1 className="hero-heading">What is Davography?</h1>
           <h1 className="hero-heading">davography</h1>
           <p className="hero-subtitle">[ˈdævɒɡræfi]</p>
           <p className="hero-subtitle">capturing the best in sports, mostly those involving motors </p>

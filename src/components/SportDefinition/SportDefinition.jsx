@@ -10,8 +10,11 @@ export default function SportDefinition(props) {
         <h1 className="category">{category}</h1>
         <Link to={link} className="gallery-link">Go to Gallery</Link>
       </div>
-      <p>{pronunciation}</p>
-      <p>{definition}</p>
+      <div>
+        <p>{pronunciation}</p>
+        <p>{definition}</p>
+      </div>
+
     </div>
   );
 }
