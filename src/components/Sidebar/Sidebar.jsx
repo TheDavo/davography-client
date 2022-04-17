@@ -5,10 +5,11 @@ import logo from "./logo_small.png"
 import items from "./sidebar-items"
 import {FaSearch} from "react-icons/fa"
 import './Sidebar.css'
+import SidebarButton from './SidebarButton'
 
 function Sidebar() {
 
-  const [sidebar, setSidebar] = useState(true);
+  const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
 
@@ -27,7 +28,11 @@ function Sidebar() {
               {items.map((item) => {
                 return (
                   <li key = {item.hoverText} className={item.className}>
-                    <Link to={item.link}>{item.shortText}</Link>
+                    <SidebarButton
+                      link = {item.link}
+                      shortText = {item.shortText}
+                      hoverText = {item.hoverText}
+                    />
                   </li>
                 )
               })}

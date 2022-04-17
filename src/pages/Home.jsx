@@ -1,13 +1,32 @@
 import React from 'react'
 import './css/Home.css'
 import SportDefinition from '../components/SportDefinition/SportDefinition'
-import infiniti from './img/infiniti_956_1_21-08-30.jpg'
+import infiniti from './img/autocross_infiniti.jpg'
 import drifting_nissan from './img/drifting_nissan.jpg'
 import porsche_canaan from './img/porsche_canaan.jpg'
 
 function Home() {
   return (
-    <div className="gallery-list bg">
+    <>
+      <section className="hero">
+        <div className="hero-info">
+          <h1 className="hero-heading">davography</h1>
+          <p className="hero-subtitle">[ˈdævɒɡræfi]</p>
+          <p className="hero-subtitle">capturing the best in sports, mostly those involving motors </p>
+        </div>
+        <div className="hero-find-image">
+          <h1>Find Your Photo</h1>
+          <p>form goes here</p>
+        </div>
+      </section>
+
+      {/* BELOW THE FOLD */}
+      <div className="explore">
+        <h2>
+          explore categories
+        </h2>
+      </div>
+      <div className="gallery-list bg">
       <div className="container">
         <div className="column-left">
           <img src={infiniti} alt="Autocross car" />
@@ -49,7 +68,7 @@ function Home() {
         </div>
       </div>
     </div>
-
+    </>
   )
 }
 
