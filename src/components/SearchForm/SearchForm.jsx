@@ -62,52 +62,62 @@ function SearchForm() {
     <>
       <h1>Find Your Moment</h1>
       <form className="searchForm" onSubmit={handleSubmit}>
-        <label htmlFor="participantNumbers">
-          <p>Participant Numbers:</p>
-          <input type="text" 
-          name="participantNumbers"
-          value={participantNumbers}
-          onChange={handleParticipantNumbersChange}
-          placeholder="Ex: 123, 456, 789" />
-        </label>
+        <ul>
+          <li>
+            <label htmlFor="participantNumbers">
+              <p>Participant Numbers:</p>
+              <input type="text" 
+              name="participantNumbers"
+              value={participantNumbers}
+              onChange={handleParticipantNumbersChange}
+              placeholder="Ex: 123, 456, 789" />
+            </label>
+          </li>
+          <li>
+            <label htmlFor="eventGenre">
+              <p>Event Genre:</p>
+                <select name="eventGenre" 
+                  onChange={handleEventGenreChange}
+                  value={eventGenre}>
+                    <option value="autocross">Autocross</option>
+                    <option value="drifting">Drifting</option>
+                    <option value="rallycross">Rallycross</option>
+                </select>
+            </label>
 
-        <label htmlFor="eventGenre">
-          <p>Event Genre:</p>
-            <select name="eventGenre" 
-              onChange={handleEventGenreChange}
-              value={eventGenre}>
-                <option value="autocross">Autocross</option>
-                <option value="drifting">Drifting</option>
-                <option value="rallycross">Rallycross</option>
-            </select>
-        </label>
+          </li>
+          <li>
+            <label htmlFor="eventOrganizer">
+              <p>Event Organizer:</p>
+                <select name="eventOrganizer" 
+                  onChange={handleEventOrganizerChange}
+                  value={eventOrganizer}>
+                    <option value="sccnh">SCCNH</option>
+                    <option value="nedco">North East Drift Coalition</option>
+                </select>
+            </label>
 
-        <label htmlFor="eventOrganizer">
-          <p>Event Organizer:</p>
-            <select name="eventOrganizer" 
-              onChange={handleEventOrganizerChange}
-              value={eventOrganizer}>
-                <option value="sccnh">SCCNH</option>
-                <option value="nedco">North East Drift Coalition</option>
-            </select>
-        </label>
+          </li>
+          <li>
+            <label htmlFor="dateFrom">
+              <p>Date From:</p>
+              <input type="date"
+              onChange={handleDateFromChange}
+              max={dateTo}/>
+            </label>
+          </li>
+          <li>
+            <label htmlFor="dateTo">
+              <p>Date To:</p>
+              <input type="date"
+              onChange={handleDateToChange}
+              min={dateFrom}
+              value={dateTo}
+              max={currentDate}/>
+            </label>
+          </li>
+        </ul>
 
-
-          <label htmlFor="dateFrom">
-            <p>Date From:</p>
-            <input type="date"
-            onChange={handleDateFromChange}
-            max={dateTo}/>
-          </label>
-
-          <label htmlFor="dateTo">
-            <p>Date To:</p>
-            <input type="date"
-            onChange={handleDateToChange}
-            min={dateFrom}
-            value={dateTo}
-            max={currentDate}/>
-          </label>
 
 
         <input type="submit" />

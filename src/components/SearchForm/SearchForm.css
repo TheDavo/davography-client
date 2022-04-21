@@ -10,13 +10,24 @@ label {
   padding: 10px;
 }
 
+.searchForm ul {
+  list-style-type:none;
+  padding: 0;
+}
+
+.searchForm ul li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
 .searchForm p {
   margin: 0;
-  padding: 0;
+  padding: 0px 1rem;
   color: black;
   font-size: 2rem;
   display: inline;
 }
+
 
 .searchForm input , select {
   font-size: 1.8rem;
@@ -25,11 +36,17 @@ label {
 @media (max-width: 1300px){
   .searchForm{
     flex-direction: column;
+    width: 100%;
   }
 
   .searchForm p {
     display: block;
     font-size: 1rem;
+    padding: 10px 0;
+  }
+
+  .searchForm ul li {
+    display: block;
   }
 
   .searchForm input,select {

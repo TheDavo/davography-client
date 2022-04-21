@@ -70,6 +70,9 @@ p {
   flex-direction: row-reverse;
 }
 
+
+/* MEDIA QUERIES */
+
 @media (max-width: 1300px) {
   .container{
     flex-direction: column;
@@ -94,7 +97,6 @@ p {
   .hero{
     flex-direction: column;
   }
-
 }
 
 
