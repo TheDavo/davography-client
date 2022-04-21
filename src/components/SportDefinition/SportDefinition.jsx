@@ -1,14 +1,15 @@
 import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types'
 import './SportDefinition.css'
 
-export default function SportDefinition(props) {
+function SportDefinition(props) {
   const {category, link, pronunciation, definition} = props;
   
   return (
     <div className="sport-definition">
       <div className="heading-container">
         <h1 className="category">{category}</h1>
-        <Link to={link} className="gallery-link">Go to Gallery</Link>
+        <Link to={link} className="gallery-link">Go To Gallery</Link>
       </div>
       <div>
         <p>{pronunciation}</p>
@@ -18,3 +19,12 @@ export default function SportDefinition(props) {
     </div>
   );
 }
+
+SportDefinition.propTypes = {
+  category: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+  definition: PropTypes.string.isRequired,
+  pronunciation: PropTypes.string.isRequired
+}
+
+export default SportDefinition

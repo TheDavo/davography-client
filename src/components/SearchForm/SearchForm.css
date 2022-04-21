@@ -1,0 +1,38 @@
+label {
+  color: white;
+}
+
+.searchForm {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffb145;
+  border-bottom: 4px solid white;
+  padding: 10px;
+}
+
+.searchForm p {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-size: 2rem;
+  display: inline;
+}
+
+.searchForm input , select {
+  font-size: 1.8rem;
+}
+
+@media (max-width: 1300px){
+  .searchForm{
+    flex-direction: column;
+  }
+
+  .searchForm p {
+    display: block;
+    font-size: 1rem;
+  }
+
+  .searchForm input,select {
+    font-size: 1rem;
+  }
+}

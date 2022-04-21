@@ -2,32 +2,40 @@ img {
   width: 100%;
 }
 
-h1, p {
+h1 {
+  color: #ffb145;
+}
+
+p {
   color: white;
+}
+
+#davography {
+  color: white
 }
 
 /* HERO SECTION */
 
-.hero{
-  display: flex;
-  justify-content: space-between;
-}
 
 .hero-heading{
   font-size: 7rem;
-  margin-left: 100px;
 }
 
 .hero-subtitle {
   font-size: 5rem;
-  margin-left:120px
 }
 
-.hero-find-image {
-  flex: 33%;
+.hero-info{
+  flex: 60%;
+  padding: 100px 0 0 80px;
+}
+
+.hero-form {
+  flex: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .explore {
@@ -86,6 +94,7 @@ h1, p {
   .hero{
     flex-direction: column;
   }
+
 }
 
 

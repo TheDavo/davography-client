@@ -2,8 +2,9 @@ import './Sidebar.css'
 
 import { Link } from 'react-router-dom'
 import {useState} from 'react'
+import PropTypes from 'prop-types'
 
-export default function SidebarButton(props) {
+function SidebarButton(props) {
   const {link, shortText, hoverText} = props;
 
   const [isHovering, setIsHovering] = useState(false)
@@ -33,3 +34,12 @@ export default function SidebarButton(props) {
     </>
   )
 }
+
+
+SidebarButton.propTypes = {
+  link: PropTypes.string.isRequired,
+  shortText: PropTypes.string.isRequired,
+  hoverText: PropTypes.string.isRequired
+}
+
+export default SidebarButton
