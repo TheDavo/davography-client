@@ -17,7 +17,10 @@ function Home() {
           <p className="hero-subtitle">capturing the best in sports, mostly those involving motors </p>
         </div>
         <div className="hero-form">
-          <SearchForm />
+          <details>
+            <summary>Find Your Moment</summary>
+            <SearchForm />
+          </details>
         </div>
       </section>
 

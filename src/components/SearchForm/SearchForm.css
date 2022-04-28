@@ -1,55 +1,35 @@
-label {
-  color: white;
+.searchForm{
+  margin: 30px;
 }
 
-.searchForm {
-  display: flex;
-  flex-direction: row;
-  background-color: #ffb145;
-  border-bottom: 4px solid white;
-  padding: 10px;
-}
-
-.searchForm ul {
-  list-style-type:none;
-  padding: 0;
-}
-
-.searchForm ul li {
-  display: inline-block;
-  padding: 0px 10px;
-}
-
-.searchForm p {
+.searchForm label {
   margin: 0;
-  padding: 0px 1rem;
   color: black;
   font-size: 2rem;
-  display: inline;
 }
 
-
-.searchForm input , select {
+input[type=date],
+input[type=text],
+input[type=submit],
+select {
+  box-sizing: border-box;
   font-size: 1.8rem;
+  width: 100%;
+  padding: 10px 20px;
+  margin: 10px 0px;
+}
+
+input[type=submit] {
+  border-radius: 15px;
+  color: white;
+  background-color: black;
+  cursor: pointer;
 }
 
 @media (max-width: 1300px){
-  .searchForm{
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .searchForm p {
-    display: block;
-    font-size: 1rem;
-    padding: 10px 0;
-  }
-
-  .searchForm ul li {
-    display: block;
-  }
-
-  .searchForm input,select {
+  .searchForm input,
+  .searchForm select,
+  .searchForm label {
     font-size: 1rem;
   }
 }

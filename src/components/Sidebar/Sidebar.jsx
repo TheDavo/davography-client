@@ -22,7 +22,7 @@ function Sidebar() {
           <img src={logo} alt="Davography Logo"/>
         </div>
         <div className={sidebar ? 'sidebar-nav active' : 'sidebar-nav'}>
-          <Link to="#" className="nav-link center-flex"><FaSearch /></Link>
+          <button className="nav-link center-flex"><FaSearch /></button>
           <div className="nav-links">
             <ul>
               {items.map((item) => {

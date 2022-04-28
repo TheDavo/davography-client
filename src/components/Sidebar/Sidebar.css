@@ -1,12 +1,10 @@
 .sidebar-wrapper {
-  height:100%;
   width: 75px;
   position: fixed;
   top: 0;
   left: 0;
   display:flex;
   flex-direction: column;
-  z-index: 1;
 }
 
 .menu-btn {
@@ -18,18 +16,20 @@
 
 .sidebar-nav {
   position: relative;
-  left: -400px;
   height: 100%;
-  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: #ffb145;
   overflow-y: auto;
+  display:none;
 }
 
 .active {
   left: 0px;
+  z-index: 1;
+  height: 100%;
+  display: flex;
   /* background-color: #ffb145; */
 }
 
