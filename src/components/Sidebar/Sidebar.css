@@ -73,3 +73,34 @@
   margin: 0;
   height: 2rem;
 }
+
+.hover-text p {
+  color: black;
+}
+
+.sidebar-searchform {
+  background-color: #ffb145;
+  position: fixed;
+  width: 33%;
+  left: 100px;
+  top: 30px;
+  border-radius: 30px;
+  border: 3px solid white;
+  transition: left 300ms ease-in-out;
+}
+
+.sidebar-nav button {
+  cursor: pointer;
+  border: none;
+
+}
+
+.hidden {
+  left: -100%;
+}
+
+@media (max-width: 1300px){
+  .sidebar-searchform{
+    width: 50%;
+  }
+}

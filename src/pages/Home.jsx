@@ -25,11 +25,6 @@ function Home() {
       </section>
 
       {/* BELOW THE FOLD */}
-      {/* <div className="explore">
-        <h2>
-          explore categories
-        </h2>
-      </div> */}
       <div className="gallery-list bg">
       <div className="container">
         <div className="column-left">

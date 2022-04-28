@@ -6,14 +6,26 @@ import items from "./sidebar-items"
 import {FaSearch} from "react-icons/fa"
 import './Sidebar.css'
 import SidebarButton from './SidebarButton'
+import SearchForm from '../SearchForm/SearchForm'
 
 function Sidebar() {
 
   const [sidebar, setSidebar] = useState(false);
 
-  const showSidebar = () => setSidebar(!sidebar);
 
 
+  const [showForm, setShowForm] = useState(false);
+
+  const showSearchForm = () => {
+    setShowForm(!showForm);
+  }
+
+  const showSidebar = () => {
+    setSidebar(!sidebar);
+    if(!sidebar === false) {
+      setShowForm(false);
+    }
+  }
   return (
   <>
     <nav>
@@ -22,7 +34,7 @@ function Sidebar() {
           <img src={logo} alt="Davography Logo"/>
         </div>
         <div className={sidebar ? 'sidebar-nav active' : 'sidebar-nav'}>
-          <button className="nav-link center-flex"><FaSearch /></button>
+          <button className="nav-link center-flex" onClick={showSearchForm}><FaSearch /></button>
           <div className="nav-links">
             <ul>
               {items.map((item) => {
@@ -40,6 +52,9 @@ function Sidebar() {
             <Link to="/about-me" className="nav-link center-flex">DK</Link>
           </div>
         </div>
+      </div>
+      <div className={showForm ? "sidebar-searchform" : "sidebar-searchform hidden"}>
+        <SearchForm/>
       </div>
     </nav>
   </>
