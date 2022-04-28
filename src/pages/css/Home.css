@@ -46,6 +46,19 @@ p {
   text-align: center;
 }
 
+.hero-form summary {
+  list-style: none;
+}
+
+.hero-form details summary::before{
+  content:"🡒";
+  padding-right: 3px;
+}
+
+.hero-form details[open] summary::before {
+  content: "🡑";
+}
+
 /* GALLERY LISTING SECTION */
 
 .container {
