@@ -21,8 +21,14 @@ p {
   font-size: 7rem;
 }
 
+#davography {
+  border-bottom: 5px solid white;
+  margin-right: 30px;
+}
+
 .hero-subtitle {
   font-size: 5rem;
+  padding: 0 0 0 100px;
 }
 
 .hero-info{
@@ -48,6 +54,7 @@ p {
 
 .hero-form summary {
   list-style: none;
+  cursor: pointer;
 }
 
 .hero-form details summary::before{
