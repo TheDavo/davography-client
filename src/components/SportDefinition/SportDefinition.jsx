@@ -8,10 +8,10 @@ function SportDefinition(props) {
   return (
     <div className="sport-definition">
       <div className="heading-container">
-        <h1 className="category">{category}</h1>
+        <h1 className="category octarine-bold">{category}</h1>
         <Link to={link} className="gallery-link">Go To Gallery</Link>
       </div>
-      <div>
+      <div className="definition">
         <p>{pronunciation}</p>
         <p>{definition}</p>
       </div>

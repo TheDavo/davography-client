@@ -6,6 +6,24 @@ body {
   background-color: rgb(14,14,14);
 }
 
+@font-face {
+  font-family: 'Typographica';
+  src: url(./fonts/typographica/TypoGraphica_demo.otf);
+}
+
+@font-face {
+  font-family: 'Octarine-Bold';
+  src: url(./fonts/octarine/Octarine-Bold.otf);
+}
+
+.typographica {
+  font-family: 'Typographica', sans-serif;
+}
+
+.octarine-bold {
+  font-family: Octarine-Bold, sans-serif;
+}
+
 .center-flex {
   display: flex;
   justify-content: center;
