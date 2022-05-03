@@ -1,8 +1,9 @@
 .footer_container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   justify-content: space-between;
+  position: relative;
+  bottom: 0;
 }
 
 .footer_grid {
@@ -20,11 +21,13 @@
 
 .footer_column_header {
   text-transform: uppercase;
+  color: #ffb145;
 }
 
 .footer_column_link {
   text-decoration: none;
   padding: 0.5rem 0;
+  color: white;
 }
 
 .footer_column_socials_container{
