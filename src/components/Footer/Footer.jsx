@@ -12,25 +12,25 @@ export default function Footer() {
 
         <div className="footer_column">
           <div className="footer_column_header">
-            About Me
-          </div>
-          <div className="footer_column_link">Bio</div>
-          <div className="footer_column_link">Gear</div>
-        </div>
-
-        <div className="footer_column">
-          <div className="footer_column_header">
             Top Sports
           </div>
           <div className="footer_column_link">Autocross</div>
           <div className="footer_column_link">Drifting</div>
           <div className="footer_column_link">Drag Racing</div>
         </div>
+        
+        <div className="footer_column">
+          <div className="footer_column_header">
+            About Me
+          </div>
+          <div className="footer_column_link">Bio</div>
+          <div className="footer_column_link">Gear</div>
+        </div>
 
         <div className="footer_column_socials_container">
           <div className="footer_column_socials">
-            <a href="#"><FaGithub/></a>
-            <a href="#"><FaYoutube/></a>
+            <a target="_blank" href="https://github.com/TheDavo"><FaGithub/></a>
+            <a target="_blank" href="https://www.youtube.com/channel/UCCP4eNATdG9DEm8j3Fb_B7Q"><FaYoutube/></a>
           </div>
         </div>
 
