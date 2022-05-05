@@ -3,7 +3,7 @@ img {
 }
 
 h1 {
-  color: #ffb145;
+  color: var(--primary-color);
 }
 
 p {
@@ -37,7 +37,7 @@ p {
 }
 
 .hero-form {
-  background-color:#ffb145;
+  background-color:var(--primary-color);
   border-bottom: 4px solid white;
   padding: 10px 0px;
 }

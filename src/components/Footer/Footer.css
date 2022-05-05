@@ -23,7 +23,7 @@
 
 .footer_column_header {
   text-transform: uppercase;
-  color: #ffb145;
+  color: var(--primary-color);
 }
 
 .footer_column_link {
@@ -47,5 +47,5 @@
 .footer_column_socials a {
   padding: 0 2rem;
   font-size: 3rem;
-  color: #ffb145;
+  color: var(--primary-color);
 }

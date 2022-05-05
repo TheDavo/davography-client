@@ -8,7 +8,7 @@
 }
 
 .menu-btn {
-  background-color: #ffb145;
+  background-color: var(--primary-color);
   padding: 20px;
   cursor: pointer;
   user-select: none;
@@ -20,7 +20,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #ffb145;
+  background-color: var(--primary-color);
   overflow-y: auto;
   display:none;
 }
@@ -48,7 +48,7 @@
 }
 
 .sidebar-nav li a {
-  color: #ffb145;
+  color: var(--primary-color);
   text-decoration: none;
   font-size: 2rem;
 }
@@ -58,7 +58,7 @@
   border-radius: 4px;
   height: 50px;
   width: 60px;
-  color: #ffb145;
+  color: var(--primary-color);
   text-decoration: none;
   font-size: 2rem;
   margin: 10px 0px;
@@ -67,7 +67,7 @@
 .hover-text {
   position: fixed;
   left: 100px;
-  background-color: #ffb145;
+  background-color: var(--primary-color);
   border-radius: 4px;
   padding: 0;
   margin: 0;
@@ -79,7 +79,7 @@
 }
 
 .sidebar-searchform {
-  background-color: #ffb145;
+  background-color: var(--primary-color);
   position: fixed;
   width: 33%;
   left: 100px;
