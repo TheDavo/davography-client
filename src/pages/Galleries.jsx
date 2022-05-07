@@ -5,12 +5,13 @@ import drifting_nissan from './img/drifting_nissan.jpg'
 import porsche_canaan from './img/porsche_canaan.jpg'
 
 import SportDefinition from '../components/SportDefinition/SportDefinition'
+import './css/Galleries.css'
 
 export default function Galleries() {
   return (
     <>      
       <div className="gallery-list bg">
-        <div className="container">
+        <div className="gallery-container">
           <div className="column-left">
             <img src={infiniti} alt="Autocross car" />
           </div>
@@ -23,7 +24,7 @@ export default function Galleries() {
             />
           </div>
         </div>
-        <div className="container">
+        <div className="gallery-container">
           <div className="column-left">
             <img src={drifting_nissan} alt="Drifting car" />
           </div>
@@ -35,7 +36,7 @@ export default function Galleries() {
               definition="the act or activity of steering an automobile so that it makes a controlled skid sideways through a turn with the front wheels pointed in a direction opposite to that of the turn"/>
           </div>
         </div>
-        <div className="container">
+        <div className="gallery-container">
           <div className="column-left">
             <img src={porsche_canaan} alt="Autocross car" />
           </div>

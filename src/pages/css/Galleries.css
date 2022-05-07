@@ -1,6 +1,6 @@
 /* GALLERY LISTING SECTION */
 
-.container {
+.gallery-container {
   display: flex;
   flex-direction: row;
   margin: 0;
@@ -14,17 +14,17 @@
   flex: 50%;
 }
 
-.gallery-list .container:nth-child(even) {
+.gallery-list .gallery-container:nth-child(even) {
   flex-direction: row-reverse;
 }
 
 
 @media (max-width: 1300px) {
-  .container {
+  .gallery-container {
     flex-direction: column;
   }
 
-  .gallery-list div.container:nth-child(even) {
+  .gallery-list div.gallery-container:nth-child(even) {
     flex-direction: column;
   }
 }
