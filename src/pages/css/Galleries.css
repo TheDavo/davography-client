@@ -1,8 +1,22 @@
 /* GALLERY LISTING SECTION */
 
-.gallery-list{
+.gallery-list {
   margin: 100px 100px 0px 100px;
 }
+
+.gallery-heading {
+  display: flex;
+  justify-content: center;
+  border-bottom: 3px solid var(--primary-color);
+}
+
+.gallery-heading h1 {
+  font-family: Octarine, san-serif;
+  font-size: 8rem;
+  padding: 0;
+  margin: 2rem;
+}
+
 
 .gallery-container {
   display: flex;

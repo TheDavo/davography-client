@@ -9,7 +9,10 @@ import './css/Galleries.css'
 
 export default function Galleries() {
   return (
-    <>      
+    <>
+      <div className="gallery-heading">
+        <h1>Galleries</h1>
+      </div>
       <div className="gallery-list bg">
         <div className="gallery-container">
           <div className="column-left">
