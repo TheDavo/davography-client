@@ -6,12 +6,6 @@ const items = [
     className: "nav-link center-flex"
   },  
   {
-    link: "/about-me",
-    shortText: "DK",
-    hoverText: "About Me",
-    className: "nav-link center-flex"
-  },
-  {
     link: "/galleries",
     shortText: "Ga",
     hoverText: "Galleries",
@@ -23,14 +17,12 @@ const items = [
     hoverText: "Gear",
     className: "nav-link center-flex" 
   },
-
   {
     link: "/about-me#contact",
     shortText: "Ct",
     hoverText: "Contact",
     className: "nav-link center-flex"
-  },
-
+  }
 ]
 
 export default items

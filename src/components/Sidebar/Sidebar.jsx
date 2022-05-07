@@ -49,7 +49,10 @@ function Sidebar() {
                 )
               })}
             </ul>
-            <Link to="/about-me" className="nav-link center-flex">DK</Link>
+            <div className ="nav-link center-flex">
+              <SidebarButton link="/about-me" shortText="DK" hoverText="About Me" /> 
+            </div>
+
           </div>
         </div>
       </div>
