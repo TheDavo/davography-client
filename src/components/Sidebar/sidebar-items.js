@@ -4,29 +4,30 @@ const items = [
     shortText: "Hm",
     hoverText: "Home",
     className: "nav-link center-flex"
-  },
+  },  
   {
-    link: "/autocross",
-    shortText: "Ax",
-    hoverText: "Autocross",
+    link: "/about-me",
+    shortText: "DK",
+    hoverText: "About Me",
     className: "nav-link center-flex"
   },
   {
-    link: "/rallycross",
-    shortText: "Rx",
-    hoverText: "Rallycross",
+    link: "/galleries",
+    shortText: "Ga",
+    hoverText: "Galleries",
+    className: "nav-link center-flex"
+  },
+  {
+    link: "/gear",
+    shortText: "Gr",
+    hoverText: "Gear",
     className: "nav-link center-flex" 
   },
+
   {
-    link: "/drifting",
-    shortText: "Dr",
-    hoverText: "Drifting",
-    className: "nav-link center-flex"
-  },
-  {
-    link: "/drag-racing",
-    shortText: "Dg",
-    hoverText: "Drag Racing",
+    link: "/about-me#contact",
+    shortText: "Ct",
+    hoverText: "Contact",
     className: "nav-link center-flex"
   },
 
