@@ -27,11 +27,11 @@
 }
 
 .column-left {
-  flex: 50%;
+  flex: 55%;
 }
 
 .column-right {
-  flex: 50%;
+  flex: 45%;
 
 }
 
@@ -41,11 +41,20 @@
 
 
 @media (max-width: 1300px) {
+
+  .gallery-list {
+    margin: 0px;
+  }
+
   .gallery-container {
     flex-direction: column;
   }
 
   .gallery-list div.gallery-container:nth-child(even) {
     flex-direction: column;
+  }
+
+  .gallery-heading h1 {
+    font-size: 5rem;
   }
 }
