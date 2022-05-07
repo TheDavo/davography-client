@@ -11,6 +11,7 @@ import Rallycross from './pages/Rallycross'
 import DragRacing from './pages/DragRacing'
 import AboutMe from './pages/AboutMe'
 import Galleries from './pages/Galleries'
+import Gear from './pages/Gear'
 
 
 const container = document.getElementById('root');
@@ -27,6 +28,7 @@ root.render(
       <Route path="drag-racing" element={<DragRacing />} />
       <Route path="about-me" element={<AboutMe />} />
       <Route path="galleries" element={<Galleries />} />
+      <Route path="gear" element={<Gear />} />
     </Route>
   </Routes>
 </BrowserRouter>
