@@ -10,6 +10,7 @@ import Drifting from "./pages/Drifting"
 import Rallycross from './pages/Rallycross'
 import DragRacing from './pages/DragRacing'
 import AboutMe from './pages/AboutMe'
+import Galleries from './pages/Galleries'
 
 
 const container = document.getElementById('root');
@@ -25,8 +26,8 @@ root.render(
       <Route path="rallycross" element={<Rallycross />} />
       <Route path="drag-racing" element={<DragRacing />} />
       <Route path="about-me" element={<AboutMe />} />
+      <Route path="galleries" element={<Galleries />} />
     </Route>
-
   </Routes>
 </BrowserRouter>
 );
