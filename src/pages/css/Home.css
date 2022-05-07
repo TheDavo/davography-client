@@ -16,6 +16,16 @@ p {
 
 /* HERO SECTION */
 
+.hero {
+  min-height: 100vh;
+  background-image: url('../img/porsche_canaan.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .hero-heading{
   font-size: 7rem;
@@ -33,7 +43,7 @@ p {
 
 .hero-info{
   padding-top: 100px;
-  padding-left: 80px;
+  padding-left: 10px;
 }
 
 .hero-form {
@@ -66,37 +76,41 @@ p {
   content: "🡑";
 }
 
-/* GALLERY LISTING SECTION */
-
-.container {
+.hero-links {
+  margin-top: 150px;
   display: flex;
-  flex-direction: row;
-  margin: 0;
+  justify-content: space-between;
 }
 
-.column-left {
-  flex: 50%;
+.hero-link {
+  text-decoration: none;
+  padding: 30px 30px;
+  margin: 50px 50px;
+  border-radius: 14px;
+  color: var(--primary-color);
+  border: 3px solid var(--primary-color);
+  background-color: black;
+  font-family: Octarine;
+  font-size: 2rem;
+  transition: 200ms ease;
 }
 
-.column-right {
-  flex: 50%;
+
+.hero-link:hover {
+  border: 3px solid white;
+  transform: translateY(-10px);
+  box-shadow: 0 0.5em 0.5em -0.4em white;
+  transition: 200ms ease;
+  color: white;
+  border-radius: 0px;
 }
 
-.gallery-list .container:nth-child(even) {
-  flex-direction: row-reverse;
-}
+
 
 
 /* MEDIA QUERIES */
 
 @media (max-width: 1300px) {
-  .container{
-    flex-direction: column;
-  }
-  
-  .gallery-list div.container:nth-child(even) {
-    flex-direction: column;
-  }
 
   .hero-heading{
     font-size: 3rem;
@@ -110,9 +124,10 @@ p {
     background-size: contain;
   }
 
-  .hero{
+  .hero, .hero-links{
     flex-direction: column;
   }
+
 }
 
 
