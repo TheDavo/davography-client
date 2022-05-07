@@ -43,7 +43,8 @@ p {
 
 .hero-info{
   padding-top: 100px;
-  padding-left: 10px;
+  padding-left: 300px;
+  padding-right: 300px;
 }
 
 .hero-form {
@@ -126,6 +127,14 @@ p {
 
   .hero, .hero-links{
     flex-direction: column;
+  }
+
+  .hero-links {
+    margin-top: 50px;
+  }
+
+  .hero-info {
+    padding: 100px;
   }
 
 }
