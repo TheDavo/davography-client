@@ -1,0 +1,30 @@
+/* GALLERY LISTING SECTION */
+
+.container {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+.column-left {
+  flex: 50%;
+}
+
+.column-right {
+  flex: 50%;
+}
+
+.gallery-list .container:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+
+@media (max-width: 1300px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .gallery-list div.container:nth-child(even) {
+    flex-direction: column;
+  }
+}
