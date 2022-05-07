@@ -5,6 +5,10 @@
   background-color: rgba(14, 14, 14, 0.7);
 }
 
+.gallery-list img {
+  width: 100%;
+}
+
 .gallery-heading {
   display: flex;
   justify-content: center;
