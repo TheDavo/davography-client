@@ -1,5 +1,9 @@
 /* GALLERY LISTING SECTION */
 
+.gallery-list{
+  margin: 100px 100px 0px 100px;
+}
+
 .gallery-container {
   display: flex;
   flex-direction: row;
