@@ -1,5 +1,5 @@
 import React from 'react'
-import "./PageHeader.css"
+import "./PageTitle.css"
 
 
 export default function PageHeader(props) {

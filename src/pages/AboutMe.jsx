@@ -1,10 +1,10 @@
 import React from 'react'
 import './css/AboutMe.css'
-import PageHeader from '../components/PageHeader/PageHeader'
+import PageTitle from '../components/PageTitle/PageTitle'
 export default function AboutMe() {
   return (
     <>
-      <PageHeader pageTitle="About Me" />
+      <PageTitle pageTitle="About Me" />
       
       <div className="about-me-content">
         <section className="bio">

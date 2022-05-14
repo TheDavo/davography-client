@@ -5,13 +5,13 @@ import drifting_nissan from './img/drifting_nissan.jpg'
 import porsche_canaan from './img/porsche_canaan.jpg'
 
 import SportDefinition from '../components/SportDefinition/SportDefinition'
-import PageHeader from '../components/PageHeader/PageHeader'
+import PageTitle from '../components/PageTitle/PageTitle'
 import './css/Galleries.css'
 
 export default function Galleries() {
   return (
     <>
-      <PageHeader pageTitle="Galleries" />
+      <PageTitle pageTitle="Galleries" />
       <div className="gallery-list bg">
         <div className="gallery-container">
           <div className="column-left">
