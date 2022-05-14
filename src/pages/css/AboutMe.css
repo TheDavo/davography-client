@@ -16,6 +16,7 @@
   font-family: Octarine, san-serif;
   font-size: 5rem;
   color: var(--primary-color);
+  border-bottom: 3px solid var(--primary-color);
 }
 
 .about-me-content section table {
@@ -27,6 +28,12 @@
 
 .about-me-content section table th, .about-me-content section table td {
   padding: 20px;
+}
+
+
+/* When a screen gets too small, this styling allows for the tables to becomes left-right scrollable instead of a jumbled mess. */
+.table-container {
+  overflow-x: auto;
 }
 
 thead {
