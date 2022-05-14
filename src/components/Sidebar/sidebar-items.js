@@ -12,7 +12,7 @@ const items = [
     className: "nav-link center-flex"
   },
   {
-    link: "/gear",
+    link: "/about-me#gear",
     shortText: "Gr",
     hoverText: "Gear",
     className: "nav-link center-flex" 

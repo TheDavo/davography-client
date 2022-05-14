@@ -1,0 +1,51 @@
+.about-me-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+  padding: 30px;
+}
+
+.about-me-content section {
+  display: grid;
+  width: 75%;
+}
+
+.about-me-content section h2 {
+  font-family: Octarine, san-serif;
+  font-size: 5rem;
+  color: var(--primary-color);
+}
+
+.about-me-content section table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid white;
+  color: white;
+}
+
+.about-me-content section table th, .about-me-content section table td {
+  padding: 20px;
+}
+
+thead {
+  background-color: var(--primary-color);
+  color: black;
+  border-bottom: 3px solid white;
+}
+
+
+tbody tr > th {
+  text-align: left;
+}
+
+tbody tr td {
+  text-align: center;
+}
+
+tbody td:hover, tbody th:hover {
+  background-color: var(--primary-color);
+  color: black;
+  transition: 200ms ease-in-out;
+}
