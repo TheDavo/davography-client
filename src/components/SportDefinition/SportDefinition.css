@@ -7,13 +7,10 @@
   font-size: 3rem;
 }
 
-p {
-  padding: 0 10px;
-  font-size: 1.5rem;
-}
-
 .definition p {
   font-style: italic;
+  padding: 0 10px;
+  font-size: 1.5rem;
 }
 
 .gallery-link {

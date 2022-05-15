@@ -13,16 +13,11 @@ export default function AboutMe() {
           <h2 className="section-header"  id="about-me">
             About Davo
           </h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nemo dicta quia velit nesciunt molestiae. Esse quaerat, numquam doloribus quis, reiciendis harum quae repellat molestias quam qui nisi explicabo magni?</p>
-          <p>Quae aliquid reprehenderit corrupti dolorem quisquam incidunt a non impedit? Rerum placeat earum, architecto nam non laboriosam veniam voluptatibus natus ipsa officiis, quia, praesentium quis veritatis pariatur. Nisi, nulla sint.</p>
-          <p>Possimus aut velit perspiciatis repudiandae dolore doloremque iusto consequuntur consectetur similique laborum, asperiores quas, rem distinctio officiis provident repellendus cupiditate quaerat assumenda in placeat. Adipisci quibusdam unde laudantium id suscipit?</p>
-          <p>Laudantium dicta, in, cumque quos pariatur libero quod ullam accusantium praesentium neque explicabo corrupti vel fugit dolorum, nobis autem aut. Nemo vel placeat tenetur voluptates architecto sed rem corrupti neque.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nemo dicta quia velit nesciunt molestiae. Esse quaerat, numquam doloribus quis, reiciendis harum quae repellat molestias quam qui nisi explicabo magni?</p>
-          <p>Quae aliquid reprehenderit corrupti dolorem quisquam incidunt a non impedit? Rerum placeat earum, architecto nam non laboriosam veniam voluptatibus natus ipsa officiis, quia, praesentium quis veritatis pariatur. Nisi, nulla sint.</p>
-          <p>Possimus aut velit perspiciatis repudiandae dolore doloremque iusto consequuntur consectetur similique laborum, asperiores quas, rem distinctio officiis provident repellendus cupiditate quaerat assumenda in placeat. Adipisci quibusdam unde laudantium id suscipit?</p>
-          <p>Laudantium dicta, in, cumque quos pariatur libero quod ullam accusantium praesentium neque explicabo corrupti vel fugit dolorum, nobis autem aut. Nemo vel placeat tenetur voluptates architecto sed rem corrupti neque.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nemo dicta quia velit nesciunt molestiae. Esse quaerat, numquam doloribus quis, reiciendis harum quae repellat molestias quam qui nisi explicabo magni?</p>
-
+          <div className="greeting">
+            <p>
+              Hey there, I'm Davo! I am a {((new Date()).getFullYear()) - 1995} years old electrical engineer in the semiconductor industry.
+            </p>
+          </div>
         </section>
         <section className="gear">
           <h2 className="section-header"  id="gear">
