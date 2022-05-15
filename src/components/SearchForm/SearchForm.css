@@ -8,10 +8,10 @@
   font-size: 2rem;
 }
 
-input[type=date],
-input[type=text],
-input[type=submit],
-select {
+.searchForm input[type=date],
+.searchForm input[type=text],
+.searchForm input[type=submit],
+.searchForm select {
   box-sizing: border-box;
   font-size: 1.8rem;
   width: 100%;
