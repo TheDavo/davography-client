@@ -5,6 +5,7 @@
   left: 0;
   display:flex;
   flex-direction: column;
+  z-index: 1;
 }
 
 .menu-btn {
@@ -27,7 +28,7 @@
 
 .active {
   left: 0px;
-  z-index: 1;
+
   height: 100%;
   display: flex;
   /* background-color: #ffb145; */
