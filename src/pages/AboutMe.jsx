@@ -1,7 +1,7 @@
 import React from 'react'
 import './css/AboutMe.css'
 import PageTitle from '../components/PageTitle/PageTitle'
-
+import {FaMapMarkerAlt} from 'react-icons/fa'
 
 export default function AboutMe() {
   return (
@@ -15,9 +15,18 @@ export default function AboutMe() {
           </h2>
           <div className="greeting">
             <p>
+              <FaMapMarkerAlt /> New Hampshire
+            </p>
+            <p>
               Hey there, I'm Davo! I am a {((new Date()).getFullYear()) - 1995} years old electrical engineer in the semiconductor industry.
             </p>
+            <p>
+              Having a desk job I needed a creative outlet that let me get out of the office. I enjoyed watching amazing automotive and motorsport photographers and videographers on YouTube and was inspired to get a camera, find people in my local racing scene, and just take pictures of them.
+            </p>
           </div>
+        </section>
+        <section className="goals">
+          <h2 className="section-header" id="about-me-goals">Goals</h2>
         </section>
         <section className="gear">
           <h2 className="section-header"  id="gear">

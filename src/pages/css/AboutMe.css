@@ -56,3 +56,10 @@ tbody td:hover, tbody th:hover {
   color: black;
   transition: 200ms ease-in-out;
 }
+
+
+@media screen and (max-width: 1300px) {
+.about-me-content section h2 {
+    font-size: 2rem;
+  }
+}

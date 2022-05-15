@@ -13,6 +13,10 @@
   font-size: 1.5rem;
 }
 
+.category {
+  font-size: 4rem;
+}
+
 .gallery-link {
   background-color: var(--primary-color);
   border-radius: 10px;
