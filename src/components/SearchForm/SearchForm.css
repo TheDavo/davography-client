@@ -23,11 +23,13 @@ input[type=submit] {
   border-radius: 15px;
   color: white;
   background-color: black;
+  border: 1px solid black;
   cursor: pointer;
+  display: block;
 }
 
 @media (max-width: 1300px){
-  .searchForm input,
+  .searchForm input[type],
   .searchForm select,
   .searchForm label {
     font-size: 1rem;

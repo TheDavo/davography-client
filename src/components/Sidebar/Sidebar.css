@@ -98,15 +98,14 @@
 .sidebar-nav button {
   cursor: pointer;
   border: none;
-
 }
 
 .hidden {
   left: -100%;
 }
 
-@media (max-width: 1300px){
+@media screen and (max-width: 1300px){
   .sidebar-searchform{
-    width: 50%;
+    width: 60%;
   }
 }
