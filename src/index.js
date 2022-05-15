@@ -12,6 +12,7 @@ import DragRacing from './pages/DragRacing'
 import AboutMe from './pages/AboutMe'
 import Galleries from './pages/Galleries'
 import Gear from './pages/Gear'
+import Login from './pages/Login'
 
 
 const container = document.getElementById('root');
@@ -29,6 +30,7 @@ root.render(
       <Route path="about-me" element={<AboutMe />} />
       <Route path="galleries" element={<Galleries />} />
       <Route path="gear" element={<Gear />} />
+      <Route path="login" element={<Login />} />
     </Route>
   </Routes>
 </BrowserRouter>
