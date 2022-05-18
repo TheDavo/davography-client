@@ -5,6 +5,8 @@ import './Lightbox.css'
 
 import {IoGridSharp} from 'react-icons/io5'
 import {FaSquareFull} from 'react-icons/fa'
+import {RiArrowLeftCircleLine} from 'react-icons/ri'
+import {RiArrowRightCircleLine} from 'react-icons/ri'
 
 export default function LightboxWrapper(props) {
 
@@ -87,15 +89,15 @@ export default function LightboxWrapper(props) {
         </div>
       </div>
 
-      <div className={openLightbox ? "lightbox active" : "lightbox hidden"}
+      <div className={openLightbox ? "lightbox lightbox-active" : "lightbox lightbox-hidden"}
         onClick={handleToggleLightbox}
         onKeyDown={lightboxKeyNav}
         tabIndex="1">
 
           <div className="lightbox-content-container">
-              <h1 className="left" onClick={moveLeft} >Left</h1>
+              <h1 className="left" onClick={moveLeft} ><RiArrowLeftCircleLine /></h1>
               <img src={currImgSrc} alt={currImgAlt} />
-              <h1 className="right" onClick={moveRight}>Right</h1>
+              <h1 className="right" onClick={moveRight}><RiArrowRightCircleLine /></h1>
           </div>
 
       </div>
