@@ -1,5 +1,4 @@
 import {useState} from 'react'
-import { Link } from 'react-router-dom'
 
 import logo from "./logo_small.png"
 import items from "./sidebar-items"
@@ -52,7 +51,6 @@ function Sidebar() {
             <div className ="nav-link center-flex">
               <SidebarButton link="/about-me" shortText="DK" hoverText="About Me" /> 
             </div>
-
           </div>
         </div>
       </div>
