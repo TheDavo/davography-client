@@ -1,11 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './css/Home.css'
-import SportDefinition from '../components/SportDefinition/SportDefinition'
-import SearchForm from "../components/SearchForm/SearchForm"
-import infiniti from './img/autocross_infiniti.jpg'
-import drifting_nissan from './img/drifting_nissan.jpg'
-import porsche_canaan from './img/porsche_canaan.jpg'
+
 
 function Home() {
   return (

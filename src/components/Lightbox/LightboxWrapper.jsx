@@ -1,6 +1,4 @@
 import React, {useState} from 'react'
-import PropTypes from 'prop-types'
-import LightboxPhoto from './LightboxPhoto'
 import './Lightbox.css'
 
 import {IoGridSharp} from 'react-icons/io5'
@@ -105,7 +103,3 @@ export default function LightboxWrapper(props) {
   )
 }
 
-
-// LightboxWrapper.propTypes = {
-//   children: PropTypes.instanceOf(LightboxPhoto),
-// }

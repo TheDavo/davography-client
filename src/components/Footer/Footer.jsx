@@ -29,8 +29,8 @@ export default function Footer() {
 
         <div className="footer_column_socials_container">
           <div className="footer_column_socials">
-            <a target="_blank" href="https://github.com/TheDavo"><FaGithub/></a>
-            <a target="_blank" href="https://www.youtube.com/channel/UCCP4eNATdG9DEm8j3Fb_B7Q"><FaYoutube/></a>
+            <a target="_blank" rel="noreferrer" href="https://github.com/TheDavo"><FaGithub/></a>
+            <a target="_blank" rel="noreferrer" href="https://www.youtube.com/channel/UCCP4eNATdG9DEm8j3Fb_B7Q"><FaYoutube/></a>
           </div>
         </div>
 
