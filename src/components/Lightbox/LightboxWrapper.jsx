@@ -106,6 +106,6 @@ export default function LightboxWrapper(props) {
 }
 
 
-LightboxWrapper.propTypes = {
-  children: PropTypes.instanceOf(LightboxPhoto),
-}
+// LightboxWrapper.propTypes = {
+//   children: PropTypes.instanceOf(LightboxPhoto),
+// }
