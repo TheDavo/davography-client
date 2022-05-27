@@ -14,7 +14,7 @@ export default function Autocross() {
     //   console.error(error);
     // }
     const fetchPhotos = async () => {
-      const response = await fetch("/query-photograph?eventGenre=autocross");
+      const response = await fetch("/query-photograph?eventGenre=autocross&limit=15");
       const thing = await response.json();
       if (response.ok) {
         console.log(thing);

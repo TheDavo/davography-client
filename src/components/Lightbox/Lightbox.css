@@ -15,10 +15,18 @@
   cursor: pointer;
 }
 
-.lightbox-items-multi {
+/* .lightbox-items-multi {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 15px;
+  align-items: center;
+} */
+
+.lightbox-items-multi {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -84,4 +92,20 @@
   overflow: hidden;
   transform: scale(110%);
   transition: 200ms ease-in-out;
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1300px) {
+  .lightbox-wrapper-nav {
+    display:none;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .lightbox-items-multi {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
