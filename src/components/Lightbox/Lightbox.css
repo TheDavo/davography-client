@@ -1,6 +1,7 @@
 .lightbox-wrapper {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .lightbox-wrapper-type-container {
@@ -25,9 +26,10 @@
 .lightbox-items-multi {
   display: flex;
   justify-content: center;
-  width: 100%;
   flex-wrap: wrap;
-  align-items: center;
+  flex-direction: row;
+  align-items: flex-start;
+
 }
 
 .lightbox-items-multi > img {
@@ -98,14 +100,8 @@
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 1300px) {
-  .lightbox-wrapper-nav {
-    display:none;
-  }
-}
-
 @media screen and (max-width: 760px) {
-  .lightbox-items-multi {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  .lightbox-wrapper-nav {
+      display: none;
+    }
 }
