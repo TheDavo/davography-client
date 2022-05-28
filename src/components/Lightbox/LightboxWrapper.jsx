@@ -86,19 +86,6 @@ export default function LightboxWrapper(props) {
           {children}
         </div>
       </div>
-
-      <div className={openLightbox ? "lightbox lightbox-active" : "lightbox lightbox-hidden"}
-        onClick={handleToggleLightbox}
-        onKeyDown={lightboxKeyNav}
-        tabIndex="1">
-
-          <div className="lightbox-content-container">
-              <h1 className="left" onClick={moveLeft} ><RiArrowLeftCircleLine /></h1>
-              <img src={currImgSrc} alt={currImgAlt} />
-              <h1 className="right" onClick={moveRight}><RiArrowRightCircleLine /></h1>
-          </div>
-
-      </div>
     </div>
   )
 }

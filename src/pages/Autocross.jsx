@@ -35,7 +35,9 @@ export default function Autocross() {
         {
           autocrossPhotos.map((photo) => {
             return(
-              <LightboxPhoto key={photo.photoID} src={photo.photoSource} alt="" />
+              <LightboxPhoto key={photo.photoID}
+                srcSmall={photo.photoSource.small}
+                srcOriginal={photo.photoSource.original} alt="" />
             )
           })
         }
