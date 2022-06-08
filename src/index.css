@@ -1,5 +1,6 @@
 :root {
   --main-bg-color: rgb(14,14,14);
+  --main-bg-color-alpha: rgba(14,14,14,0.4);
   --primary-color: #ffb145;
 }
 
