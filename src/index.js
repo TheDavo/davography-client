@@ -13,6 +13,7 @@ import AboutMe from './pages/AboutMe'
 import Galleries from './pages/Galleries'
 import Gear from './pages/Gear'
 import Login from './pages/Login'
+import Gallery from './pages/Gallery'
 
 
 const container = document.getElementById('root');
@@ -23,14 +24,14 @@ root.render(
   <Routes>
     <Route path="/" element={<App />}>
       <Route index element={<Home />} />
-      <Route path="autocross" element={<Autocross />} />
-      <Route path="drifting" element={<Drifting />} />
-      <Route path="rallycross" element={<Rallycross />} />
-      <Route path="drag-racing" element={<DragRacing />} />
+
       <Route path="about-me" element={<AboutMe />} />
-      <Route path="galleries" element={<Galleries />} />
       <Route path="gear" element={<Gear />} />
       <Route path="login" element={<Login />} />
+    </Route>
+    <Route path="galleries/" element={<App />} >
+      <Route index element={<Galleries />} />
+      <Route path=":galleryGenre" element={<Gallery />} />
     </Route>
   </Routes>
 </BrowserRouter>
