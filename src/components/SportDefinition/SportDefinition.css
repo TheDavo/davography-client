@@ -1,5 +1,5 @@
 .heading-container{
-  display: flex;
+  display: block;
   justify-content: space-between;
   align-items: center;
   padding-right: 30px;
