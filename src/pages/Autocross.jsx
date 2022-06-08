@@ -7,23 +7,23 @@ import PageTitle from '../components/PageTitle/PageTitle'
 export default function Autocross() {
   const [autocrossPhotos, setAutocrossPhotos] = useState([]);
 
-  useEffect(() => {
-    // try{
-    //   await fetchPhotos()
-    // } catch (error) {
-    //   console.error(error);
-    // }
-    const fetchPhotos = async () => {
-      const response = await fetch("/query-photograph?eventGenre=autocross&limit=15");
-      const thing = await response.json();
-      if (response.ok) {
-        console.log(thing);
-        setAutocrossPhotos(thing.photoSources);
-      }
-    }
+  // useEffect(() => {
+  //   // try{
+  //   //   await fetchPhotos()
+  //   // } catch (error) {
+  //   //   console.error(error);
+  //   // }
+  //   const fetchPhotos = async () => {
+  //     const response = await fetch("/query-photograph?eventGenre=autocross&limit=15");
+  //     const thing = await response.json();
+  //     if (response.ok) {
+  //       console.log(thing);
+  //       setAutocrossPhotos(thing.photoSources);
+  //     }
+  //   }
     
-    fetchPhotos();
-  }, [])
+  //   fetchPhotos();
+  // }, [])
 
   return (
     <>
