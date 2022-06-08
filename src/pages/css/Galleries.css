@@ -2,7 +2,7 @@
 
 .gallery-list {
   margin: 100px 100px 0px 100px;
-  background-color: rgba(14, 14, 14, 0.7);
+  background-color: var(--main-bg-color-alpha);
 }
 
 .gallery-list img {
@@ -24,7 +24,7 @@
 }
 
 
-.gallery-container {
+.gallery-container .gallery {
   display: flex;
   flex-direction: row;
   margin: 0;
@@ -39,7 +39,7 @@
 
 }
 
-.gallery-list .gallery-container:nth-child(even) {
+.gallery-list .gallery-container .gallery:nth-child(even) {
   flex-direction: row-reverse;
 }
 
@@ -50,11 +50,11 @@
     margin: 0px;
   }
 
-  .gallery-container {
+  .gallery-container .gallery {
     flex-direction: column;
   }
 
-  .gallery-list div.gallery-container:nth-child(even) {
+  .gallery-list div.gallery-container .gallery:nth-child(even) {
     flex-direction: column;
   }
 

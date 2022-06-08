@@ -1,12 +1,9 @@
 import React from 'react'
-
-import infiniti from './img/autocross_infiniti.jpg'
-import drifting_nissan from './img/drifting_nissan.jpg'
-import porsche_canaan from './img/porsche_canaan.jpg'
-
 import SportDefinition from '../components/SportDefinition/SportDefinition'
 import PageTitle from '../components/PageTitle/PageTitle'
 import './css/Galleries.css'
+import galleryImages from './galleries_generator/gallery_images'
+import galleries from './galleries_generator/gallery_list.js'
 
 export default function Galleries() {
   return (
@@ -14,13 +11,30 @@ export default function Galleries() {
       <PageTitle pageTitle="Galleries" />
       <div className="gallery-list bg">
         <div className="gallery-container">
-          <div className="column-left">
+          {galleries.map(gallery => {
+            return (
+              <div className="gallery" key={gallery.galleryName}>
+                <div className="column-left">
+                  <img src={galleryImages[gallery.galleryGenre]} alt={gallery.galleryName} />
+                </div>
+                <div className="column-right">
+                  <SportDefinition 
+                    category={gallery.galleryName}
+                    link={gallery.galleryLink}
+                    pronunciation={gallery.galleryPronunciation}
+                    definition={gallery.galleryDefinition}
+                  />
+                </div>
+              </div>
+            );
+          })}
+          {/* <div className="column-left">
             <img src={infiniti} alt="Autocross car" />
           </div>
           <div className="column-right">
             <SportDefinition 
               category="Autocross"
-              link="/autocross"
+              link="/galleries/autocross"
               pronunciation="[ˈôˌtōˌkrôs]"
               definition="a form of competition in which cars are driven around an obstacle course, typically marked out by cones."
             />
@@ -49,7 +63,7 @@ export default function Galleries() {
               pronunciation="[ˈrælɪˌkrɒs]"
               definition="a form of motor sport in which cars race over a one-mile circuit of rough grass with some hard-surfaced sections"
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </>
